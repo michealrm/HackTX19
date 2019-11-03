@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import SubscriptionInfo from "./SubscriptionInfo.js"
-import subscriptions from "./subscriptions.json"
+import SubscriptionInfo from "./SubscriptionInfo.js";
+import subscriptions from "./subscriptions.json";
+import Plastic from 'react-plastic';
+import "./CardInfo.css"
 
 const CardInfo = props => {
     const [exclude, setExclude] = useState([]);
@@ -12,7 +14,15 @@ const CardInfo = props => {
 
     return (
         <div class="card">
-            <p>{ props.card['last_four'] }</p>
+            <div class="card-image">
+                <Plastic
+                    type="visa"
+                    name="Jane Murray"
+                    expiry="10/21"
+                    number={"************".concat(props.card['last_four'])}
+                    cvc="***"
+                />
+            </div>
             <div class="subscriptions">
                 {
                     subscriptions

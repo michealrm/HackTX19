@@ -14,11 +14,31 @@ const SubscriptionInfo = props => {
         props.excludeSubscription(token);
     };
 
+    var color = 'red';
+    var paymentTime = Date.parse(props.subscription.next_payment_date);
+    var currTime = new Date().getTime();
+    var diff = paymentTime - currTime;
+    var style = {}
+    const warningStyle = {
+        margin: 'auto',
+        border: '3px solid red',
+    };
+    var dateStyle = {}
+    const warningDateStyle = {
+        'font-weight': 'bold',
+        'background-color': 'red'
+    };
+    console.log(diff);
+    if(diff < 1000 * 60 * 60 * 24 * 5) {
+        style = warningStyle;
+        dateStyle = warningDateStyle;
+    }
+
     return (
-        <div class="subscription">
+        <div style={style} class="subscription">
             <p>{ props.subscription['name'] }</p>
-            <p>{ props.subscription.next_payment_date }</p>
-            <p>{ props.subscription.config.amount }</p>
+            <p style={dateStyle}>{ props.subscription.next_payment_date }</p>
+            <p>{ "$" + props.subscription.config.amount }</p>
             <a href="#" name={ props.subscription.token } onClick={ handleClick }>Cancel</a>
         </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CardInfo from "./CardInfo.js";
+import { Button } from "react-bootstrap";
 var base64 = require('base-64');
 
 const CardsDisplay = props => {
