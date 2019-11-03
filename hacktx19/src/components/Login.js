@@ -12,6 +12,9 @@ const Login = props => {
 
   function handleSubmit(event) {
     event.preventDefault();
+    if(email === 'test@gmail.com' && password === 'test') {
+        props.success(email);
+    }
   }
   return (
     <div className="Login">
