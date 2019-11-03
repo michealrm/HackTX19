@@ -20,11 +20,7 @@ const Login = props => {
 
   return (
     <div className="Login">
-<<<<<<< HEAD
-
-=======
       <h1><center>Please enter your login</center></h1>
->>>>>>> b14b1a85681916e741933e2119339cac60e47b0e
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email">
           <FormLabel>Email</FormLabel>
