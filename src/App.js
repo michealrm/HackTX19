@@ -18,7 +18,7 @@ function App() {
         );
     } else {
         return (
-            <CardDisplay />
+            <CardDisplay user_token='14220d65-299b-42ad-bb5b-1b2a45b6e855'/>
         );
     }
 
