@@ -20,7 +20,7 @@ const Login = props => {
     <div className="Login">
       <h1><center>Please enter your login</center></h1>
       <form onSubmit={handleSubmit}>
-        <FormGroup controlId="email" bsSize="large">
+        <FormGroup controlId="email">
           <FormLabel>Email</FormLabel>
           <FormControl
             autoFocus
@@ -29,7 +29,7 @@ const Login = props => {
             onChange={e => setEmail(e.target.value)}
           />
         </FormGroup>
-        <FormGroup controlId="password" bsSize="large">
+        <FormGroup controlId="password">
           <FormLabel>Password</FormLabel>
           <FormControl
             value={password}
@@ -37,7 +37,7 @@ const Login = props => {
             type="password"
           />
         </FormGroup>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+        <Button block disabled={!validateForm()} type="submit">
           Login
         </Button>
       </form>
