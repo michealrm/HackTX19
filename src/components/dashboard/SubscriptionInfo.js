@@ -6,7 +6,6 @@ const SubscriptionInfo = props => {
     const handleClick = event => {
         event.preventDefault();
         let token = event.target.getAttribute('name');
-        console.log('hgiruwguiw ' + token);
 
         // Note: This callback is temp. The billing api wasn't working, so we needed
         // to implement this portion without the api.

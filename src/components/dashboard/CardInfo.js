@@ -7,11 +7,9 @@ const CardInfo = props => {
 
     const excludeSubscription = token => {
         let joined = exclude.concat(token);
-        console.log('tokennn ' + token);
         setExclude(joined);
     };
 
-    console.log("hhhhhhhh " + exclude);
     return (
         <div class="card">
             <p>{ props.card['last_four'] }</p>
