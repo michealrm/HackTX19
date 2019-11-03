@@ -12,7 +12,9 @@ function App() {
 
     if(!user) {
         return (
-            <Login success={handleLogin}/>
+            <div>
+                <Login success={handleLogin} />
+            </div>
         );
     } else {
         return (

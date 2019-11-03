@@ -18,6 +18,7 @@ const Login = props => {
   }
   return (
     <div className="Login">
+      <h1><center>Please enter your login</center></h1>
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
           <FormLabel>Email</FormLabel>
