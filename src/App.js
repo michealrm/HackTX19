@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
 import Login from './components/Login.js'
-import CardInfo from './components/dashboard/CardInfo.js'
+import CardDisplay from './components/dashboard/CardDisplay.js'
 import './App.css';
 
 function App() {
 
-    console.log(process.env);
-    console.log(process.env.REACT_APP_AUTH);
     const [user, setUser] = useState();
     const handleLogin = loginName => {
         setUser(loginName);
@@ -18,7 +16,7 @@ function App() {
         );
     } else {
         return (
-            <CardInfo />
+            <CardDisplay />
         );
     }
 
