@@ -4,7 +4,6 @@ var base64 = require('base-64');
 
 const CardsDisplay = props => {
   const [cards, setCards] = useState(null);
-
   if(!cards) {
       fetch('/cards/user/' + props.user_token, {
         method: 'get', 
@@ -24,7 +23,7 @@ const CardsDisplay = props => {
       });
   } else {
       return (
-          <div class="card">
+          <div class="cards">
             {cards.map(item => <CardInfo card={item} />)}
           </div>
       );
