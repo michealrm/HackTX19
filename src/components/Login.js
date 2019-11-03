@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "./Login.css";
 
+
 const Login = props => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,18 +17,25 @@ const Login = props => {
         props.success(email);
     }
   }
+
   return (
     <div className="Login">
+<<<<<<< HEAD
+
+=======
       <h1><center>Please enter your login</center></h1>
+>>>>>>> b14b1a85681916e741933e2119339cac60e47b0e
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email">
           <FormLabel>Email</FormLabel>
           <FormControl
             autoFocus
+            Please Enter your log in
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
+
         </FormGroup>
         <FormGroup controlId="password">
           <FormLabel>Password</FormLabel>
@@ -42,6 +50,7 @@ const Login = props => {
         </Button>
       </form>
     </div>
+
   );
 
 }
