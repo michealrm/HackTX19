@@ -1,0 +1,70 @@
+[
+    {
+      "token": "1",
+      "account_token": "1",
+      "name": "Netflix",
+      "status": "ACTIVE",
+      "next_payment_date": "2019-11-5",
+      "config": {
+        "amount": 15.99,
+        "currency_code": "USD",
+        "start_date": "2019-05-01",
+        "expiration_date": "2019-12-31",
+        "days_of_month": [12],
+        "frequency": "MONTHLY"
+      },
+      "created_time": "2018-04-14T22:17:46Z",
+      "last_modified_time": "2018-04-14T23:22:31Z"
+    },
+    {
+      "token": "2",
+      "account_token": "1",
+      "name": "Hulu",
+      "status": "ACTIVE",
+      "next_payment_date": "2019-11-12",
+      "config": {
+        "amount": 11.99,
+        "currency_code": "USD",
+        "start_date": "2019-05-01",
+        "expiration_date": "2019-12-31",
+        "days_of_month": [12],
+        "frequency": "MONTHLY"
+      },
+      "created_time": "2018-04-14T22:17:46Z",
+      "last_modified_time": "2018-04-14T23:22:31Z"
+    },
+    {
+      "token": "3",
+      "account_token": "1",
+      "name": "Xbox Game Pass",
+      "status": "ACTIVE",
+      "next_payment_date": "2019-11-27",
+      "config": {
+        "amount": 14.99,
+        "currency_code": "USD",
+        "start_date": "2019-05-01",
+        "expiration_date": "2019-12-31",
+        "days_of_month": [12],
+        "frequency": "MONTHLY"
+      },
+      "created_time": "2018-04-14T22:17:46Z",
+      "last_modified_time": "2018-04-14T23:22:31Z"
+    },
+    {
+      "token": "4",
+      "account_token": "1",
+      "name": "Amazon Prime Student",
+      "status": "ACTIVE",
+      "next_payment_date": "2019-12-2",
+      "config": {
+        "amount": 6.49,
+        "currency_code": "USD",
+        "start_date": "2019-05-01",
+        "expiration_date": "2019-12-31",
+        "days_of_month": [12],
+        "frequency": "MONTHLY"
+      },
+      "created_time": "2018-04-14T22:17:46Z",
+      "last_modified_time": "2018-04-14T23:22:31Z"
+    }
+]

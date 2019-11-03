@@ -20,9 +20,13 @@ const Login = props => {
 
   return (
     <div className="Login">
+<<<<<<< HEAD
 
+=======
+      <h1><center>Please enter your login</center></h1>
+>>>>>>> b14b1a85681916e741933e2119339cac60e47b0e
       <form onSubmit={handleSubmit}>
-        <FormGroup controlId="email" bsSize="large">
+        <FormGroup controlId="email">
           <FormLabel>Email</FormLabel>
           <FormControl
             autoFocus
@@ -33,7 +37,7 @@ const Login = props => {
           />
 
         </FormGroup>
-        <FormGroup controlId="password" bsSize="large">
+        <FormGroup controlId="password">
           <FormLabel>Password</FormLabel>
           <FormControl
             value={password}
@@ -41,7 +45,7 @@ const Login = props => {
             type="password"
           />
         </FormGroup>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+        <Button block disabled={!validateForm()} type="submit">
           Login
         </Button>
       </form>

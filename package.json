@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-loader": "^8.0.6",
+    "base-64": "^0.1.0",
     "bootstrap": "^4.3.1",
     "path": "^0.12.7",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
+    "react-plastic": "^1.1.1",
     "react-scripts": "3.2.0"
   },
   "scripts": {
@@ -33,5 +36,6 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3"
-  }
+  },
+  "proxy": "https://shared-sandbox-api.marqeta.com/v3/"
 }
